@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" metaid="_8550daf4-714f-4e83-b8d8-7e56db95c1f1" version="4">
+  <model id="Model_1" name="Panteleev2002_TFPImechanism_schmema3" metaid="_0">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>This model originates from BioModels Database: A Database of Annotated Published Models (http://www.ebi.ac.uk/biomodels/). It is copyright (c) 2005-2011 The BioModels.net Team.<br/>
+For more information see the <a href="http://www.ebi.ac.uk/biomodels/legal.html" target="_blank">terms of use</a>.<br/>
+To cite BioModels Database, please use: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20587024" target="_blank">Li C, Donizelli M, Rodriguez N, Dharuri H, Endler L, Chelliah V, Li L, He E, Henry A, Stefan MI, Snoep JL, Hucka M, Le Novère N, Laibe C (2010) BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. BMC Syst Biol., 4:92.</a>
+      </p>
+    </body>
+  </notes>
+    <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_0">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Schubert</vCard:Family>
+	<vCard:Given>Michael</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>schubert@ebi.ac.uk</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>EBI</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	<dcterms:created rdf:parseType="Resource">
+	<dcterms:W3CDTF>2011-08-26T16:35:50Z</dcterms:W3CDTF>
+	</dcterms:created>
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2014-05-28T16:16:15Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/MODEL1108260008"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000359"/>
+	</rdf:Bag>
+	</bqmodel:is>
+	<bqmodel:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubmed/11985578"/>
+	</rdf:Bag>
+	</bqmodel:isDescribedBy>
+	<bqmodel:isDerivedFrom>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/pubmed/9468488"/>
+	</rdf:Bag>
+	</bqmodel:isDerivedFrom>
+	<bqbiol:isVersionOf>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/go/GO:0007596"/>
+	</rdf:Bag>
+	</bqbiol:isVersionOf>
+	<bqbiol:occursIn>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/taxonomy/2759"/>
+	</rdf:Bag>
+	</bqbiol:occursIn>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+      <listOfUnitDefinitions>
+      <unitDefinition id="time" name="time" metaid="_1179a925-5af6-4d7d-a92e-801ad5ca5d0b">
+        <listOfUnits>
+          <unit metaid="c4ed2995-fe55-4bcd-bf78-dc65d1353cd8" multiplier="60" kind="second"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="substance" name="substance" metaid="fb5d5dbf-5b81-49f6-bcbb-47df337ca00c">
+        <listOfUnits>
+          <unit scale="-9" metaid="_6c58a6ff-143a-4d55-aa14-ca8c1815eb14" kind="mole"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment" name="compartment" metaid="_18" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="VIIa_TF" initialConcentration="1" name="VIIa_TF" metaid="_1" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_1">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13726"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P08709"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="X" initialConcentration="170" name="X" metaid="_2" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_2">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="VIIa_TF_X" initialConcentration="0" name="VIIa_TF_X" metaid="_3" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_3">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13726"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P08709"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="VIIa_TF_Xa" initialConcentration="0" name="VIIa_TF_Xa" metaid="_4" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_4">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13726"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P08709"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Xa" initialConcentration="0" name="Xa" metaid="_5" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_5">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="TFPI" initialConcentration="2.4" name="TFPI" metaid="_6" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_6">
+	<bqbiol:is>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P10646"/>
+	</rdf:Bag>
+	</bqbiol:is>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Xa_TFPI" initialConcentration="0" name="Xa_TFPI" metaid="_7" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_7">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P10646"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="Xa_TFPI_VIIa_TF" initialConcentration="0" name="Xa_TFPI_VIIa_TF" metaid="_8" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_8">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13726"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P08709"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P10646"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+      <species id="VIIa_TF_Xa_TFPI" initialConcentration="0" name="VIIa_TF_Xa_TFPI" metaid="_9" compartment="compartment">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9">
+	<bqbiol:hasPart>
+	<rdf:Bag>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P13726"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P08709"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P00742"/>
+	<rdf:li rdf:resource="http://identifiers.org/uniprot/P10646"/>
+	</rdf:Bag>
+	</bqbiol:hasPart>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="reaction_1" name="reaction_1" metaid="_10">
+        <listOfReactants>
+          <speciesReference species="X" metaid="_10f86fdf-7b74-4195-bcd9-8f115797e2ba" sboTerm="SBO:0000010"/>
+          <speciesReference species="VIIa_TF" metaid="_76084b93-1e45-44f4-8fa0-06935a4c86c6" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="VIIa_TF_X" metaid="b911a04d-0aaf-444e-9ad4-66b16f37281c" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="_87ed15a3-80de-4f0d-92dd-374c0d854326" sboTerm="SBO:0000101">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> X </ci>
+                  <ci> VIIa_TF </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> VIIa_TF_X </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945910" value="5" sboTerm="SBO:0000036"/>
+            <parameter id="k2" name="k2" metaid="_945911" value="770" sboTerm="SBO:0000038"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_2" name="reaction_2" metaid="_11" reversible="false">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF_X" metaid="a2c079c4-719c-4512-913b-b2e35aa5912d" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="VIIa_TF_Xa" metaid="d2e71731-0dd3-4c8b-91e4-955b5d81c87f" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="a0dd93a4-1017-42ca-9fb7-98fc37ffe4d8" sboTerm="SBO:0000049">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <ci> k1 </ci>
+              <ci> VIIa_TF_X </ci>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945913" value="420" sboTerm="SBO:0000035"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_3" name="reaction_3" metaid="_12">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF_Xa" metaid="_567d7a76-5aeb-4487-9854-5d96737ad2f7" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xa" metaid="a0c86328-b488-4c54-972d-7e4c9fc90ece" sboTerm="SBO:0000011"/>
+          <speciesReference species="VIIa_TF" metaid="_741c03c9-1789-45c4-87fd-f122d868948c" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="fa0b6718-a177-4f39-9d75-1484395c20d5" sboTerm="SBO:0000083">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> VIIa_TF_Xa </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> Xa </ci>
+                  <ci> VIIa_TF </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945914" value="770" sboTerm="SBO:0000035"/>
+            <parameter id="k2" name="k2" metaid="_945915" value="5" sboTerm="SBO:0000039"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_4" name="reaction_4" metaid="_13">
+        <listOfReactants>
+          <speciesReference species="Xa" metaid="ad37abcc-974d-4f13-b853-70df38859971" sboTerm="SBO:0000010"/>
+          <speciesReference species="TFPI" metaid="e20c838b-909b-4fee-b4ae-859d891400fa" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xa_TFPI" metaid="_54a22a0d-a85a-425c-8f79-22a59a5a9498" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="_728b84a9-eddf-40d3-a2dc-442f0690ee42" sboTerm="SBO:0000101">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> Xa </ci>
+                  <ci> TFPI </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> Xa_TFPI </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945916" value="0.054" sboTerm="SBO:0000036"/>
+            <parameter id="k2" name="k2" metaid="_945917" value="0.02" sboTerm="SBO:0000038"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_5" name="reaction_5" metaid="_14">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF" metaid="_1fc8224e-6fda-4039-a9d1-a811a2abd030" sboTerm="SBO:0000010"/>
+          <speciesReference species="Xa_TFPI" metaid="_3844d95e-57a9-42d7-9f74-1e4fc1bab908" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xa_TFPI_VIIa_TF" metaid="d2bc0964-4364-48ca-8f63-68e270ef1db2" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="_5d5c0ac3-e478-4fbe-a717-d0d376485fca" sboTerm="SBO:0000101">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> VIIa_TF </ci>
+                  <ci> Xa_TFPI </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> Xa_TFPI_VIIa_TF </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945919" value="0.44" sboTerm="SBO:0000036"/>
+            <parameter id="k2" name="k2" metaid="_945921" value="0" sboTerm="SBO:0000038"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_6" name="reaction_6" metaid="_15">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF_Xa" metaid="_9f817079-62b1-4888-9fa9-6e8a9465f12f" sboTerm="SBO:0000010"/>
+          <speciesReference species="TFPI" metaid="b989d714-20fb-4935-ae70-45c476a95c31" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="VIIa_TF_Xa_TFPI" metaid="_5d3183ea-ed8d-4b3c-bf6d-9b9ba691c5a8" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="a0e18ff0-29fe-44b4-8ef8-5fc08386e3f8" sboTerm="SBO:0000101">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> VIIa_TF_Xa </ci>
+                  <ci> TFPI </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> VIIa_TF_Xa_TFPI </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945923" value="6" sboTerm="SBO:0000036"/>
+            <parameter id="k2" name="k2" metaid="_945925" value="0.02" sboTerm="SBO:0000038"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_9" name="reaction_8" metaid="_16">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF_Xa_TFPI" metaid="_31f1f52a-9a7d-4f34-8fd9-dfef3b6b662a" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Xa_TFPI_VIIa_TF" metaid="a21048bc-7242-4fbf-8b13-40862a06f39c" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="ffc896eb-bd6c-4bd9-a509-72770e1f984a" sboTerm="SBO:0000080">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> VIIa_TF_Xa_TFPI </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> Xa_TFPI_VIIa_TF </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945927" value="0" sboTerm="SBO:0000035"/>
+            <parameter id="k2" name="k2" metaid="_945929" value="0" sboTerm="SBO:0000038"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="reaction_8" name="reaction_9" metaid="_17">
+        <listOfReactants>
+          <speciesReference species="VIIa_TF_X" metaid="_9a18b12b-fb8c-4878-942e-4b0683286906" sboTerm="SBO:0000010"/>
+          <speciesReference species="Xa_TFPI" metaid="bd5ab6a1-4e45-468e-b925-b2ce1391909e" sboTerm="SBO:0000010"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="X" metaid="fb191ed7-050d-432a-8e61-9792e47cd4cf" sboTerm="SBO:0000011"/>
+          <speciesReference species="VIIa_TF_Xa_TFPI" metaid="e0668e07-e0c3-40af-b836-4baf216b01a0" sboTerm="SBO:0000011"/>
+        </listOfProducts>
+        <kineticLaw metaid="_2ab90ea1-0668-4439-994d-564dca9ff44d" sboTerm="SBO:0000104">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">          
+            <apply>
+              <times/>
+              <ci> compartment </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> VIIa_TF_X </ci>
+                  <ci> Xa_TFPI </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> X </ci>
+                  <ci> VIIa_TF_Xa_TFPI </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+                  <listOfParameters>
+            <parameter id="k1" name="k1" metaid="_945930" value="20" sboTerm="SBO:0000036"/>
+            <parameter id="k2" name="k2" metaid="_945931" value="0" sboTerm="SBO:0000039"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
